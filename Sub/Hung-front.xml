@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>37</id>
+      <size>16</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-11-20 09:32:51.681988+00:00</created>
+      <updated>2026-11-21 02:26:06.295995+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>15</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>37</id>
+          <start>0</start>
+          <stop>15</stop>
+          <url>http://localhost:8080/api/jobs/37/dataset/export/api/jobs/37</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>tranthanhhung1812</username>
+        <email>tranthanhhung1812@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>lane</name>
+          <color>#ffd400</color>
+          <type>polyline</type>
+          <attributes>
+            <attribute>
+              <name>position</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>L1</default_value>
+              <values>L1
+R1
+L2
+R2
+other</values>
+            </attribute>
+            <attribute>
+              <name>style</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>solid</default_value>
+              <values>solid
+dashed</values>
+            </attribute>
+            <attribute>
+              <name>color</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>white</default_value>
+              <values>white
+yellow
+other</values>
+            </attribute>
+            <attribute>
+              <name>kind</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>single</default_value>
+              <values>single
+double</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>road_curb</name>
+          <color>#ff7f0e</color>
+          <type>polyline</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>crosswalk</name>
+          <color>#e377c2</color>
+          <type>polygon</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>drivable</name>
+          <color>#2ca02c</color>
+          <type>polygon</type>
+          <attributes>
+            <attribute>
+              <name>area_type</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>direct</default_value>
+              <values>direct
+alternative</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_light</name>
+          <color>#d62728</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>color</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>red</default_value>
+              <values>red
+yellow
+green
+off
+unknown</values>
+            </attribute>
+            <attribute>
+              <name>type</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>vehicle</default_value>
+              <values>vehicle
+pedestrian
+beacon</values>
+            </attribute>
+            <attribute>
+              <name>facing</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>front</default_value>
+              <values>front
+side
+back</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_sign</name>
+          <color>#1f77b4</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>prohibitory</default_value>
+              <values>prohibitory
+mandatory
+warning
+information
+supplementary
+other</values>
+            </attribute>
+            <attribute>
+              <name>facing</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>front</default_value>
+              <values>front
+side
+back</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>camera</name>
+          <color>#7f7f7f</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>value</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>front</default_value>
+              <values>front
+fisheye_front
+fisheye_rear
+fisheye_left
+fisheye_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>timeofday</name>
+          <color>#bcbd22</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>value</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>day</default_value>
+              <values>day
+dusk
+night</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>weather</name>
+          <color>#17becf</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>value</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>clear</default_value>
+              <values>clear
+overcast
+rain
+fog
+other</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>source</name>
+          <color>#8c564b</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>value</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>real</default_value>
+              <values>real
+simulated</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-11-21 03:35:52.038744+00:00</dumped>
+  </meta>
+  <image id="0" name="A01_bc5fadac-fa6dd225.jpg" width="1280" height="720">
+    <polygon label="drivable" source="manual" occluded="0" points="1280.00,706.79;1280.00,706.79;430.50,504.30;420.64,496.17;409.25,495.97;408.59,502.36;736.30,720.00;1280.00,720.00;1280.00,706.79" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="104.50,720.00;365.70,503.70" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="127.51,719.42;366.33,506.50;407.03,505.81;682.92,720.00;127.18,720.00" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="1280.00,703.50;434.00,503.50" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="0.59,608.07;335.07,507.67;357.17,508.35;94.21,720.00;0.00,720.00;0.00,612.17" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="551.84" ytl="409.01" xbr="604.09" ybr="477.64" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="road_curb" source="manual" occluded="0" points="1280.00,629.93;475.34,504.54;432.34,501.23;421.63,493.83" z_order="0">
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.00,602.00;335.01,505.32" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">double</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="654.70,680.60;407.00,502.30" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="0.00,558.36;331.28,501.46" z_order="0">
+    </polyline>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+  </image>
+  <image id="1" name="A02_b3c26aff-63a0d7d6.jpg" width="1280" height="720">
+    <polygon label="drivable" source="manual" occluded="0" points="-0.00,584.45;473.87,436.65;518.49,420.16;529.74,413.77;537.60,407.60;538.84,403.83;536.60,400.36;523.19,400.20;471.72,417.62;0.00,511.60" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="1134.34,720.00;688.60,426.60;588.40,399.70;573.80,400.70;599.11,414.90;602.76,419.00;602.94,425.24;600.80,441.56;426.08,720.00" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="1159.29,719.50;812.70,497.10;736.30,449.90;696.60,428.90;664.90,416.30;594.27,400.02" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.04,589.51;253.11,511.84;455.72,445.21;518.90,421.94;530.53,416.00;538.82,410.61;546.70,397.82" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="509.63,566.73;587.20,459.60;598.94,436.89;601.10,422.24;597.48,416.00;564.57,397.66" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="1280.00,617.07;712.50,418.60;618.82,400.36" z_order="0">
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="0.75,507.99;473.39,414.10;522.25,398.67" z_order="0">
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="0.00,598.58;481.81,439.74;535.45,417.31;541.38,412.15;548.55,399.51;566.12,399.67;593.55,416.31;596.01,428.41;591.78,444.75;401.19,720.00;0.00,720.00" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="2" name="A03_b1c66a42-6f7d68ca.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="0" points="0.00,437.77;220.31,403.19" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="972.22,486.25;896.97,462.17;770.43,425.71;706.45,405.03;668.48,390.07" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="793.67" ytl="311.62" xbr="828.37" ybr="345.49" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="698.47,465.20;628.45,410.64;601.33,391.69;592.41,380.88" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="1000.89" ytl="279.71" xbr="1044.20" ybr="327.20" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="drivable" source="manual" occluded="0" points="865.54,646.22;703.90,462.94;608.86,393.34;600.87,384.35;635.77,385.88;1280.00,589.30;1280.00,659.67" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="253.79,692.26;550.70,372.30;578.10,373.30;600.18,396.66;695.90,469.50;837.98,645.03;523.12,643.25;523.66,676.70" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">dusk</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="3" name="A04_b7a8e795-0ff55db2.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="1" points="317.74,372.22;470.86,342.70" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="48.27,551.05;500.40,358.51;567.61,325.40" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">double</attribute>
+    </polyline>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="206.90" ytl="194.80" xbr="237.45" ybr="203.84" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">back</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="224.25" ytl="180.37" xbr="239.65" ybr="192.60" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="717.43,533.58;618.55,358.02;602.94,322.62" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="118.70,407.00;317.74,372.22" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="470.86,342.70;538.96,324.32" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="80.31,551.72;514.95,356.97;575.36,321.01;600.87,321.34;707.03,534.60;401.06,530.74" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="732.41,535.37;612.66,335.78;661.28,335.63;1280.00,538.07;1280.00,556.05" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polyline label="road_curb" source="manual" occluded="0" points="1280.00,470.50;741.49,348.90;662.22,328.15" z_order="0">
+    </polyline>
+    <polygon label="crosswalk" source="manual" occluded="0" points="200.33,359.97;229.03,351.16;272.16,351.34;272.16,359.97" z_order="0">
+    </polygon>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="4" name="A05_b2576c8c-2de20b8a.jpg" width="1280" height="720">
+    <polygon label="drivable" source="manual" occluded="0" points="0.00,465.03;595.80,277.30;674.00,277.00;846.88,381.71;1155.62,557.01;516.20,528.98;0.00,560.17" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polyline label="road_curb" source="manual" occluded="0" points="1018.04,389.34;908.05,340.69" z_order="0">
+    </polyline>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+  </image>
+  <image id="5" name="A06_b8c66e31-37045eec.jpg" width="1280" height="720">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="661.05" ytl="214.44" xbr="711.29" ybr="241.30" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="crosswalk" source="manual" occluded="0" points="31.39,409.78;197.05,409.78;438.74,420.51;635.95,439.44;842.31,466.89;913.94,491.82;534.35,446.06;0.47,422.40;0.78,411.80" z_order="0">
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="941.70" ytl="339.10" xbr="968.08" ybr="367.01" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="911.50" ytl="337.95" xbr="935.04" ybr="364.30" z_order="0">
+      <attribute name="color">red</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="934.36" ytl="290.89" xbr="949.14" ybr="332.00" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="853.26" ytl="319.86" xbr="898.55" ybr="365.79" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="560.30" ytl="303.22" xbr="591.90" ybr="334.80" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="drivable" source="manual" occluded="0" points="227.10,630.93;471.74,406.38;505.20,365.60;526.70,366.01;639.76,471.09;792.87,671.82" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="517.96" ytl="147.72" xbr="575.88" ybr="176.49" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="300.12" ytl="126.81" xbr="358.04" ybr="155.58" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="road_curb" source="manual" occluded="0" points="933.89,491.83;682.35,410.21" z_order="0">
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="1" points="682.35,410.21;651.10,400.96" z_order="0">
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="651.10,400.96;611.79,389.16" z_order="0">
+    </polyline>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+  </image>
+  <image id="6" name="A07_b41ace08-c8468690.jpg" width="1280" height="720">
+    <polygon label="drivable" source="manual" occluded="0" points="796.10,563.46;1280.00,578.87;1280.00,490.88;716.96,271.56;697.08,272.79;700.40,282.58" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="865.63,422.46;714.24,283.13" z_order="0">
+      <attribute name="position">other</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="1280.00,483.20;888.11,337.36;761.86,288.05" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="769.53,561.14;695.80,274.10" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="0.42,578.61;440.50,365.04;450.29,415.12;677.32,410.36;686.89,273.19;691.69,273.28;751.68,560.58" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">rain</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+  </image>
+  <image id="7" name="A08_c0deebc1-16cfa791.jpg" width="1280" height="720">
+    <polyline label="road_curb" source="manual" occluded="0" points="752.67,297.33;708.63,286.09" z_order="0">
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="1.28,303.89;414.85,277.00" z_order="0">
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="44.27,357.10;482.23,281.99" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.04,320.87;463.87,274.93" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="259.82,425.59;565.79,278.54;587.10,252.76;597.76,253.63;611.74,277.27;640.92,311.57;752.41,448.50" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="772.52,447.93;619.81,276.33;641.39,274.43;648.88,280.59;649.16,294.64;657.57,302.00;709.78,302.70;709.84,287.56;753.01,299.76;1280.00,422.81;1280.00,468.43" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="843.10,317.90;765.90,299.59;898.74,304.57;929.39,311.51;846.21,311.62" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="643.87,276.12;554.67,272.22;553.17,277.72;646.07,280.92" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="579.28,257.10;606.28,258.80;607.58,265.10;575.68,264.10" z_order="0">
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="669.00" ytl="148.45" xbr="685.41" ybr="190.30" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="763.51" ytl="163.27" xbr="776.50" ybr="199.10" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="869.32" ytl="146.06" xbr="892.21" ybr="204.24" z_order="0">
+      <attribute name="color">unknown</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">back</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="767.34" ytl="229.42" xbr="783.83" ybr="243.04" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="361.02" ytl="90.99" xbr="374.80" ybr="126.40" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="201.96" ytl="101.72" xbr="222.00" ybr="145.40" z_order="0">
+      <attribute name="color">unknown</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="292.29" ytl="136.83" xbr="306.90" ybr="168.10" z_order="0">
+      <attribute name="color">unknown</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="992.30" ytl="185.86" xbr="1009.30" ybr="204.50" z_order="0">
+      <attribute name="group">prohibitory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="988.78" ytl="207.23" xbr="1009.90" ybr="231.10" z_order="0">
+      <attribute name="group">prohibitory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="698.59" ytl="183.29" xbr="715.46" ybr="199.35" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="518.17" ytl="175.30" xbr="534.58" ybr="196.70" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="288.18" ytl="199.60" xbr="306.15" ybr="223.14" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="429.44" ytl="231.19" xbr="440.75" ybr="240.64" z_order="0">
+      <attribute name="color">red</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="389.08" ytl="212.33" xbr="406.00" ybr="228.00" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="697.14" ytl="240.70" xbr="709.64" ybr="253.50" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="747.10" ytl="63.29" xbr="881.65" ybr="126.50" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="699.74" ytl="206.90" xbr="712.24" ybr="220.50" z_order="0">
+      <attribute name="group">supplementary</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="765.60,449.50;642.84,307.47;619.95,280.91" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="crosswalk" source="manual" occluded="0" points="0.00,414.31;1278.42,471.18;1280.00,516.51;1280.00,546.65;663.12,493.02;0.00,506.20" z_order="0">
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="1276.09,481.49;770.99,316.80" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="road_curb" source="manual" occluded="0" points="1279.76,419.03;856.10,322.50" z_order="0">
+    </polyline>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="8" name="A09_c7e6d5d1-c8af9fe3.jpg" width="1280" height="720">
+    <box label="traffic_light" source="manual" occluded="0" xtl="255.61" ytl="211.13" xbr="281.62" ybr="252.00" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="535.39,642.91;670.38,432.05" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="445.37,660.90;435.98,497.26;443.77,475.34;454.83,461.16;504.98,440.64" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">double</attribute>
+    </polyline>
+    <polygon label="crosswalk" source="manual" occluded="0" points="575.05,421.37;773.53,425.53;785.74,447.19;566.17,439.14" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="168.30,451.40;272.40,437.90;179.86,431.48;166.69,435.97" z_order="0">
+    </polygon>
+    <polyline label="road_curb" source="manual" occluded="0" points="1225.92,679.16;780.16,430.54" z_order="0">
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="551.21,645.68;667.95,445.25;705.56,410.19;722.43,393.00;754.80,393.54;751.95,405.64;769.67,424.67;1280.00,712.22;1280.00,720.00;1101.34,720.00;814.14,683.06;542.81,661.40" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="482.07,625.13;476.08,563.86;456.76,519.90;462.09,465.95;515.24,442.64;561.53,440.64;594.69,428.19;635.92,429.45;690.73,396.95;712.25,397.89;665.82,432.59;527.03,635.99" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="426.20" ytl="323.94" xbr="437.90" ybr="346.20" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="271.25" ytl="330.92" xbr="285.70" ybr="358.40" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="261.40" ytl="313.40" xbr="271.33" ybr="345.40" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="155.95" ytl="304.95" xbr="177.80" ybr="327.80" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">side</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="384.79" ytl="346.02" xbr="394.08" ybr="355.00" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="385.25" ytl="356.09" xbr="395.17" ybr="365.38" z_order="0">
+      <attribute name="group">mandatory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="809.72" ytl="341.53" xbr="824.83" ybr="360.01" z_order="0">
+      <attribute name="group">prohibitory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="9" name="A10_b6ff1331-f6d3fba8.jpg" width="1280" height="720">
+    <box label="traffic_light" source="manual" occluded="0" xtl="742.29" ytl="184.57" xbr="756.80" ybr="205.72" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="560.65" ytl="195.41" xbr="568.40" ybr="208.89" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="480.52" ytl="254.01" xbr="494.31" ybr="265.61" z_order="0">
+      <attribute name="color">red</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="441.50" ytl="232.00" xbr="461.83" ybr="239.16" z_order="0">
+      <attribute name="group">mandatory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="439.37" ytl="151.49" xbr="455.79" ybr="167.29" z_order="0">
+      <attribute name="group">supplementary</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="45.08" ytl="48.00" xbr="95.94" ybr="172.84" z_order="0">
+      <attribute name="group">prohibitory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="439.62" ytl="240.41" xbr="453.41" ybr="252.01" z_order="0">
+      <attribute name="color">red</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="road_curb" source="manual" occluded="0" points="1.60,492.70;400.52,349.97" z_order="0">
+    </polyline>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="903.28" ytl="201.62" xbr="920.08" ybr="216.34" z_order="0">
+      <attribute name="group">supplementary</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="435.62,607.25;539.76,383.19" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="81.53,652.90;534.82,320.23" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="1184.58,662.56;955.27,511.44" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="454.79,604.66;515.59,454.25;545.02,457.64;546.71,465.13;763.73,457.64;773.54,436.33;833.36,433.48;1164.33,657.98;884.01,590.67" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="103.47,648.76;535.94,323.02;541.58,329.69;546.76,339.71;535.31,377.53;424.27,606.57" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="763.94" ytl="188.55" xbr="784.26" ybr="205.14" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="441.54" ytl="200.74" xbr="457.50" ybr="216.23" z_order="0">
+      <attribute name="group">supplementary</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="439.50" ytl="172.24" xbr="456.72" ybr="185.40" z_order="0">
+      <attribute name="group">mandatory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <tag label="weather" source="manual">
+      <attribute name="value">rain</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="10" name="A11_c1f35f18-b529c043.jpg" width="1280" height="720">
+    <polyline label="road_curb" source="manual" occluded="0" points="0.47,490.30;225.35,446.44" z_order="0">
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="98.94,720.00;503.04,432.92" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">double</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="783.92,603.29;605.76,433.30" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.31,548.64;303.61,464.59;384.36,440.37" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <box label="traffic_light" source="manual" occluded="0" xtl="623.74" ytl="309.51" xbr="641.57" ybr="336.46" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="367.87" ytl="311.69" xbr="387.00" ybr="338.60" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="706.18" ytl="347.49" xbr="724.11" ybr="356.98" z_order="0">
+      <attribute name="group">mandatory</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="drivable" source="manual" occluded="0" points="147.76,720.00;509.59,435.77;603.69,435.77;891.64,720.00" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="926.26,720.00;614.34,437.91;658.49,437.91;701.60,476.48;816.73,477.17;1280.00,645.69;1280.00,720.00" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="364.35,427.74;515.73,421.94;517.18,431.27;341.75,436.45" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="577.30,423.68;631.10,423.88;636.70,431.98;580.00,431.78" z_order="0">
+    </polygon>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">dusk</attribute>
+    </tag>
+  </image>
+  <image id="11" name="A12_c0f978fa-9b4e623f.jpg" width="1280" height="720">
+    <polygon label="crosswalk" source="manual" occluded="0" points="78.13,451.23;568.79,441.18;878.35,445.51;978.12,473.01;536.48,468.28;0.00,487.42;0.00,470.51" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="1137.70,486.60;1280.00,481.82;1280.00,514.59" z_order="0">
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="964.60" ytl="284.90" xbr="1004.10" ybr="317.20" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="722.57" ytl="51.20" xbr="773.19" ybr="119.29" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="940.25" ytl="251.86" xbr="987.08" ybr="271.92" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="964.78" ytl="231.79" xbr="1015.32" ybr="245.54" z_order="0">
+      <attribute name="group">supplementary</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polyline label="lane" source="manual" occluded="0" points="568.41,437.39;543.85,386.75" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="390.20,444.11;480.05,395.78" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.15,538.29;167.40,486.50;430.28,402.11" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="479.73,399.40;546.07,399.76;645.77,622.51;368.89,612.15;108.10,631.70" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="652.10,621.36;547.16,383.11;577.56,381.73;661.89,423.23;1002.89,678.06;778.05,623.32" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="552.04" ytl="317.98" xbr="561.80" ybr="331.30" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="487.53" ytl="310.39" xbr="497.29" ybr="323.71" z_order="0">
+      <attribute name="color">off</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="12" name="A13_c179d309-b446fda3.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="0" points="1192.00,553.40;808.87,439.26;770.95,425.12" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="767.21,557.14;612.55,425.21;571.71,388.46" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="325.70,509.40;479.42,390.85" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="210.99,630.50;476.92,400.09;574.94,400.09;822.07,622.03;489.94,612.86" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="849.54,625.28;749.55,526.44;636.96,439.46;776.32,432.04;1280.00,587.32;1280.00,681.90;959.25,620.73" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="1280.00,573.21;769.26,420.13;754.87,408.94;776.72,399.15;791.10,390.23;1280.00,477.41" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">rain</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="13" name="A14_ca04d99f-c1282bb7.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="0" points="310.97,607.55;479.20,446.40" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">double</attribute>
+    </polyline>
+    <polygon label="crosswalk" source="manual" occluded="0" points="25.04,446.33;447.80,429.70;402.50,473.30;0.00,488.70;0.00,447.00" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="734.60,430.90;911.32,429.39;1011.49,472.41;759.53,467.68;735.42,441.44" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="19.85,444.69;142.78,411.84;3.42,417.01;0.00,419.34;0.00,445.27" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="948.42,440.77;840.69,398.54;1098.37,417.25;1138.91,439.33" z_order="0">
+    </polygon>
+    <box label="traffic_light" source="manual" occluded="0" xtl="386.30" ytl="113.49" xbr="435.84" ybr="170.50" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="740.90" ytl="98.82" xbr="781.80" ybr="155.80" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="809.70" ytl="199.10" xbr="835.10" ybr="230.00" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="drivable" source="manual" occluded="0" points="343.78,604.58;425.28,524.11;782.22,524.11;828.64,607.67;569.71,597.36" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="207.29" ytl="203.59" xbr="247.27" ybr="217.78" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="drivable" source="manual" occluded="0" points="847.58,604.08;738.69,428.26;723.57,368.18;731.63,366.92;790.70,390.36;1047.32,481.94;1280.00,573.64;1280.00,624.92" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">night</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="14" name="A15_be85bd88-d849c034.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="0" points="924.04,681.34;666.80,472.30;626.42,427.23;619.47,410.92;618.04,398.97" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="127.53,661.66;566.30,408.50" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="0.96,536.32;269.61,487.57" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="1279.89,591.75;887.36,485.28;795.72,458.22;724.93,434.98;688.46,420.85;666.02,408.71" z_order="0">
+      <attribute name="position">R2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="156.32,658.43;569.52,410.47;596.89,391.82;615.34,391.43;615.14,407.81;625.53,435.12;675.48,493.13;899.53,673.02;713.04,650.37;710.38,635.72;341.41,628.39;340.74,646.38" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="944.82,679.01;671.68,468.55;629.19,424.73;618.87,393.36;639.32,393.49;664.23,409.61;713.44,432.78;817.81,468.75;1280.00,597.43;1280.00,720.00;1188.62,720.00;1184.38,718.97;1076.49,696.33" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="159.06" ytl="280.92" xbr="241.93" ybr="351.90" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="180.99" ytl="344.46" xbr="226.70" ybr="377.50" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="186.75" ytl="375.88" xbr="219.10" ybr="396.30" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="508.64" ytl="343.49" xbr="530.51" ybr="381.25" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="542.31" ytl="351.10" xbr="565.90" ybr="376.90" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="675.17" ytl="345.74" xbr="698.76" ybr="371.54" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="748.71" ytl="347.51" xbr="766.80" ybr="385.70" z_order="0">
+      <attribute name="group">warning</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="742.83" ytl="329.32" xbr="820.29" ybr="379.44" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="565.17" ytl="232.99" xbr="709.40" ybr="308.07" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">overcast</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+  <image id="15" name="A16_b6f77fda-33d2260f.jpg" width="1280" height="720">
+    <polyline label="lane" source="manual" occluded="0" points="974.71,543.15;745.50,401.50;712.14,379.42" z_order="0">
+      <attribute name="position">L1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polyline label="lane" source="manual" occluded="0" points="365.03,529.32;474.77,377.06" z_order="0">
+      <attribute name="position">R1</attribute>
+      <attribute name="style">dashed</attribute>
+      <attribute name="color">white</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <polygon label="drivable" source="manual" occluded="0" points="384.11,526.56;467.33,407.62;651.35,411.42;650.08,379.91;699.85,380.49;958.70,539.93" z_order="0">
+      <attribute name="area_type">direct</attribute>
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="263.68,355.42;471.77,362.69;475.62,352.93;474.72,343.17;454.07,342.26;305.21,338.18" z_order="0">
+    </polygon>
+    <polygon label="crosswalk" source="manual" occluded="0" points="652.10,346.80;853.81,351.68;855.72,357.86;851.00,377.26;668.00,370.19" z_order="0">
+    </polygon>
+    <polygon label="drivable" source="manual" occluded="0" points="337.40,539.62;467.52,375.09;239.49,368.18;0.00,444.54;0.00,540.70" z_order="0">
+      <attribute name="area_type">alternative</attribute>
+    </polygon>
+    <polyline label="lane" source="manual" occluded="0" points="0.75,437.41;231.80,367.99" z_order="0">
+      <attribute name="position">L2</attribute>
+      <attribute name="style">solid</attribute>
+      <attribute name="color">yellow</attribute>
+      <attribute name="kind">single</attribute>
+    </polyline>
+    <box label="traffic_light" source="manual" occluded="0" xtl="765.15" ytl="106.50" xbr="785.89" ybr="144.72" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">vehicle</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_light" source="manual" occluded="0" xtl="854.58" ytl="242.37" xbr="881.02" ybr="263.11" z_order="0">
+      <attribute name="color">green</attribute>
+      <attribute name="type">pedestrian</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="843.35" ytl="216.31" xbr="870.99" ybr="228.46" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="865.38" ytl="209.80" xbr="902.20" ybr="220.70" z_order="0">
+      <attribute name="group">information</attribute>
+      <attribute name="facing">front</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <tag label="camera" source="manual">
+      <attribute name="value">front</attribute>
+    </tag>
+    <tag label="timeofday" source="manual">
+      <attribute name="value">day</attribute>
+    </tag>
+    <tag label="weather" source="manual">
+      <attribute name="value">clear</attribute>
+    </tag>
+    <tag label="source" source="manual">
+      <attribute name="value">real</attribute>
+    </tag>
+  </image>
+</annotations>
